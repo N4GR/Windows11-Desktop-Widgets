@@ -151,6 +151,10 @@ class PriceLabel(QLabel):
         )
         
         self.price = price
+        
+        self.setStyleSheet(
+            "color: white;"
+        )
 
 class TimerLabel(QLabel):
     def __init__(
@@ -165,4 +169,8 @@ class TimerLabel(QLabel):
         time_str = f"{minutes:02}:{seconds:02}"
         
         self.setText(time_str)
+        
+        self.setStyleSheet(
+            "color: white;"
+        )
         
